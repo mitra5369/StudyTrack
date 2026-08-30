@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyTrack — Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Study<span>Track</span></div>
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">STUDENT DASHBOARD</p>
+        <h1>Study smarter. Track progress.</h1>
+        <p class="subtitle">A simple dashboard to manage subjects, tasks and daily study goals.</p>
+      </div>
+      <div class="streak">
+        <strong id="streak">0</strong>
+        <span>day streak 🔥</span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="card"><span>Subjects</span><strong id="subjectCount">0</strong></div>
+      <div class="card"><span>Tasks left</span><strong id="taskCount">0</strong></div>
+      <div class="card"><span>Completed</span><strong id="doneCount">0</strong></div>
+      <div class="card"><span>Progress</span><strong id="progress">0%</strong></div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Subjects</h2>
+          <button id="addSubject" class="small-btn">+ Add</button>
+        </div>
+        <div id="subjects" class="subject-list"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Today's Tasks</h2>
+          <button id="addTask" class="small-btn">+ Add</button>
+        </div>
+        <div id="tasks"></div>
+      </div>
+    </section>
+
+    <section class="panel goal-panel">
+      <div class="panel-head">
+        <h2>Daily Goal</h2>
+        <span id="goalText">0 / 4 tasks</span>
+      </div>
+      <div class="progress-bar"><div id="goalBar"></div></div>
+      <p class="hint">Complete 4 tasks today to hit your goal.</p>
+    </section>
+  </main>
+
+  <footer>StudyTrack • Built with HTML, CSS & JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
