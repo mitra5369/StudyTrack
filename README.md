@@ -18,3 +18,9 @@ HTML • CSS • JavaScript
 
 ## GitHub
 This is a beginner-friendly portfolio project. Improve it with login, charts, a Pomodoro timer, and a backend/database.
+## Project Features
+
+- Student study dashboard
+- Track study progress
+- Simple and responsive interface
+- Built with HTML, CSS and JavaScript
