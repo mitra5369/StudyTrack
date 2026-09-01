@@ -24,3 +24,10 @@ This is a beginner-friendly portfolio project. Improve it with login, charts, a 
 - Track study progress
 - Simple and responsive interface
 - Built with HTML, CSS and JavaScript
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- Git & GitHub
