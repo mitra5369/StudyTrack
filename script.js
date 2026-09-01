@@ -33,3 +33,15 @@ document.getElementById("themeBtn").onclick=()=>{document.body.classList.toggle(
 if(localStorage.getItem("dark")==="true"){document.body.classList.add("dark");document.getElementById("themeBtn").textContent="☀️"}
 function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
 render();
+
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeToggle.textContent = "☀️ Light Mode";
+    } else {
+        themeToggle.textContent = "🌙 Dark Mode";
+    }
+});
