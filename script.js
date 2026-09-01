@@ -36,12 +36,19 @@ render();
 
 const themeToggle = document.getElementById("themeToggle");
 
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️ Light Mode";
+}
+
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeToggle.textContent = "☀️ Light Mode";
-    } else {
-        themeToggle.textContent = "🌙 Dark Mode";
-    }
+    const isDark = document.body.classList.contains("dark-mode");
+
+    localStorage.setItem("darkMode", isDark);
+
+    themeToggle.textContent = isDark
+        ? "☀️ Light Mode"
+        : "🌙 Dark Mode";
 });
